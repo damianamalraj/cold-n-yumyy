@@ -7,7 +7,7 @@ Flavor.init(
   {
     id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
       autoIncrement: true,
       primaryKey: true,
     },
@@ -15,13 +15,9 @@ Flavor.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
   },
   {
-    modelName: "Flavor",
+    modelName: "flavor",
     sequelize: sequelize,
     timestamps: false,
   }

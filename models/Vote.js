@@ -7,7 +7,7 @@ Vote.init(
   {
     id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
       autoIncrement: true,
       primaryKey: true,
     },
@@ -15,9 +15,18 @@ Vote.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    flavorId: {
+      type: DataTypes.INTEGER,
+      foreiginKey: true,
+      allowNull: false,
+    },
   },
   {
-    modelName: "Vote",
+    modelName: "vote",
     sequelize: sequelize,
     timestamps: false,
   }

@@ -3,8 +3,49 @@
 }
 body {
   background-color: #ffb2b2;
+  text-align: center;
+}
+
+p {
+  font-size: 24px;
 }
 
 .cover {
   width: 100%;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+}
+
+.ice-cream {
+  width: 12rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+input[type="text"] {
+  width: 24rem;
+  font-size: 24px;
+  padding: 0.5rem;
+  border: none;
+}
+
+button {
+  min-width: 6rem;
+  padding: 0.5rem;
+  font-size: 24px;
+  background-color: #ffd1d1;
+  border: none;
+  color: #333;
 }
