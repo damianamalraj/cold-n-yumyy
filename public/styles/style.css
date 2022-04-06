@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
 * {
   margin: 0;
+  font-family: "Fredoka", sans-serif;
 }
 body {
   background-color: #ffb2b2;
@@ -19,6 +22,12 @@ section {
   grid-template-columns: repeat(4, 1fr);
   place-items: center;
 }
+main {
+  margin-top: 4rem;
+}
+section.thanks {
+  margin-top: 4rem;
+}
 
 .ice-cream {
   width: 12rem;
@@ -29,7 +38,7 @@ article {
   flex-direction: column;
   align-items: center;
 }
-div {
+div.inputes {
   text-align: center;
   margin: 4rem 0;
 }
@@ -48,4 +57,9 @@ button {
   background-color: #ffd1d1;
   border: none;
   color: #333;
+}
+.list-items {
+  border: 3px solid #f1f1f1;
+  background-color: white;
+  padding: 1rem;
 }

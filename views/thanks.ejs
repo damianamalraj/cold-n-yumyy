@@ -1,0 +1,23 @@
+<%- include('./partials/header') %>
+
+<h1>Thanks for Voting!</h1>
+<a href="/"><button>Vote Again!</button></a>
+
+<main>
+  <h1>Top 10</h1>
+  <section class="thanks">
+    <% for (const item of array) {%>
+    <div class="list-items">
+      <img
+        class="ice-cream"
+        src="./img/ice-cream.png"
+        alt="ice cream picture"
+      />
+      <p><%= item.flavourName %></p>
+      <p>Votes: <%= item.dataValues.voteCount %></p>
+    </div>
+    <% } %>
+  </section>
+</main>
+
+<%- include('./partials/footer') %>

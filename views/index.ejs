@@ -1,20 +1,29 @@
 <%- include('./partials/header') %>
 
 <header>
-  <img class="cover" src="./img/coldnyummy.png" alt="" />
+  <img class="cover" src="./img/coldnyummy.png" alt="cover picture" />
 </header>
 <main>
   <form action="/vote" method="POST">
     <section>
-      <% for(flavor of flavors){ %>
+      <% for(flavour of flavours){ %>
       <article>
-        <img class="ice-cream" src="./img/ice-cream.png" alt="ice cream" />
-        <p><%= flavor.name %></p>
-        <input checked type="radio" value="<%= flavor.name %>" name="flavor" />
+        <img
+          class="ice-cream"
+          src="./img/ice-cream.png"
+          alt="ice cream picture"
+        />
+        <p><%= flavour.name %></p>
+        <input
+          checked
+          type="radio"
+          value="<%= flavour.name %>"
+          name="flavour"
+        />
       </article>
       <% } %>
     </section>
-    <div>
+    <div class="inputes">
       <input type="text" name="name" />
       <input type="text" name="email" />
       <button>Send</button>

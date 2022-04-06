@@ -19,9 +19,13 @@ Vote.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    flavorId: {
+    flavourId: {
       type: DataTypes.INTEGER,
       foreiginKey: true,
+      allowNull: false,
+    },
+    flavourName: {
+      type: DataTypes.STRING,
       allowNull: false,
     },
   },

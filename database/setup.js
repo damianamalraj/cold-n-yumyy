@@ -1,10 +1,10 @@
 const sequelize = require("../database");
 
 const Vote = require("../models/Vote");
-const Flavor = require("../models/Flavor");
+const Flavour = require("../models/Flavour");
 
-Flavor.hasMany(Vote);
-Vote.belongsTo(Flavor);
+Flavour.hasMany(Vote);
+Vote.belongsTo(Flavour);
 
 (async () => {
   await sequelize.sync({ force: true });
