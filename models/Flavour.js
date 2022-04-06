@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../database");
 
-class Flavor extends Model {}
+class Flavour extends Model {}
 
-Flavor.init(
+Flavour.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -17,10 +17,10 @@ Flavor.init(
     },
   },
   {
-    modelName: "flavor",
+    modelName: "flavour",
     sequelize: sequelize,
     timestamps: false,
   }
 );
 
-module.exports = Flavor;
+module.exports = Flavour;

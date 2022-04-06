@@ -1,18 +1,18 @@
 const sequelize = require("../database");
 
-const Flavor = require("../models/Flavor");
+const Flavour = require("../models/Flavour");
 
 (async () => {
-  await Flavor.bulkCreate([
-    { name: "Vanilj" },
-    { name: "Päron" },
-    { name: "Choklad" },
-    { name: "hasselnöt" },
-    { name: "Mandel" },
-    { name: "Äpple" },
-    { name: "Banan" },
-    { name: "Apelsin" },
+  await Flavour.bulkCreate([
+    { name: "Vanilla" },
+    { name: "Pear" },
+    { name: "Chocolate" },
+    { name: "Hazelnut" },
+    { name: "Almond" },
+    { name: "Apple" },
+    { name: "Banana" },
+    { name: "Orange" },
     { name: "Mint" },
-    { name: "Druva" },
+    { name: "Grape" },
   ]);
 })();
