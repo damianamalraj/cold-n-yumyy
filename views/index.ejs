@@ -5,6 +5,11 @@
 </header>
 <main>
   <form action="/vote" method="POST">
+    <div class="inputes">
+      <input type="text" name="name" />
+      <input type="text" name="email" />
+      <button>Send</button>
+    </div>
     <section>
       <% for(flavour of flavours){ %>
       <article>
@@ -23,11 +28,7 @@
       </article>
       <% } %>
     </section>
-    <div class="inputes">
-      <input type="text" name="name" />
-      <input type="text" name="email" />
-      <button>Send</button>
-    </div>
   </form>
 </main>
+
 <%- include('./partials/footer') %>
